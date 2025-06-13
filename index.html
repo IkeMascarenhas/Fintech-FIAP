@@ -1,27 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <title>Home</title>
     <style type="text/tailwindcss">
       @theme {
-        --orange: #ea5a14;
+        --color-orange: #ea5a14;
       }
     </style>
-</head>
-<body>
-    <header class="flex justify-between items-center bg-black p-4">
-        <div><img src="img/menu.svg" alt="Ícone para acessar o menu"></div>
-        <h1 class="text-white ">FINTECH</h1>
-        <div><img src="img/userIcon.png" alt="Ícone para acessar a área de infromações do usuário e login"></div>
+  </head>
+  <body>
+    <header class="flex justify-between items-center bg-black p-3.5">
+      <div class="cursor-pointer"><img src="img/menu.svg" alt="Ícone para acessar o menu" /></div>
+      <h1 class="text-white">FINTECH</h1>
+      <div class="cursor-pointer">
+        <img
+          src="img/userIcon.png"
+          alt="Ícone para acessar a área de infromações do usuário e login"
+        />
+      </div>
     </header>
-    <article>
-      <h1>Seu dinheiro, seu controle</h1>
-      <section>
-        <img src="img/savings.png" alt="Ícone de poupança">
+    <article class="flex flex-col items-center w-[80vw] m-auto ">
+      <h1 class="text-orange my-3">
+        <strong class="font-semibold">Seu dinheiro, seu controle</strong>
+      </h1>
+      <section class="pitchSection">
+        <img src="img/savings.png" alt="Ícone de poupança" />
+        <p>
+          Transforme sua relação com o dinheiro e alcance seus objetivos
+          financeiros.
+        </p>
+        <a href="#">Começar</a>
+      </section>
+      
+      <section class="pitchSection">
+        <img src="img/analytics.png" alt="Ícone de análise de gastos" />
+        <p>
+          Controle completo de recebimentos, gastos, dívidas e investimentos.
+        </p>
+      </section>
+      <section class="pitchSection">
+        <img src="img/addPerson.png" alt="Ícone de cadastro de usuários" />
+        <p>
+          Cadastre-se e dê o primeiro passo rumo à liberdade financeira.s
+        </p>
+        <a href="#">Criar conta</a>
       </section>
     </article>
-</body>
+    <footer></footer>
+  </body>
 </html>
